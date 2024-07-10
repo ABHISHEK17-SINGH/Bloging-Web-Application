@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<h1> heLLOS HOW ARE YOU </h1>
+{% for post in posts %}
+<h1> {{post.title}}</h1>
+<p>{{post.content}} by {{post.name}}</p>
+<p>on {{post.date}}</p>
+{%endfor%}
+
+
+
+
+{% endblock content %}
